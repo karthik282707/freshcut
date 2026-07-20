@@ -1,0 +1,552 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arjun Kumar",
+      "phone": "9876543210",
+      "email": "customer@freshcut.com",
+      "password_hash": "$2a$10$nVj/EElwXK0WUJeFGk1wReoKrjl3OKsNclnWR8oh55jM0gqfFRof6",
+      "role": "customer",
+      "created_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 2,
+      "name": "Rajan Meats",
+      "phone": "9123456789",
+      "email": "butcher@freshcut.com",
+      "password_hash": "$2a$10$nVj/EElwXK0WUJeFGk1wReoKrjl3OKsNclnWR8oh55jM0gqfFRof6",
+      "role": "butcher",
+      "created_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 3,
+      "name": "Admin FreshCut",
+      "phone": "9000000001",
+      "email": "admin@freshcut.com",
+      "password_hash": "$2a$10$nVj/EElwXK0WUJeFGk1wReoKrjl3OKsNclnWR8oh55jM0gqfFRof6",
+      "role": "admin",
+      "created_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 4,
+      "name": "Pending Butcher",
+      "phone": "9888888888",
+      "email": "pending_butcher@freshcut.com",
+      "password_hash": "$2a$10$nVj/EElwXK0WUJeFGk1wReoKrjl3OKsNclnWR8oh55jM0gqfFRof6",
+      "role": "butcher",
+      "created_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 5,
+      "name": "karthi",
+      "email": "karthibutcher@freshcut.com",
+      "password_hash": "$2a$10$H1aAb/VL.D41O/Cj2/o8C.qSuIPRPAxBhRyXltY.ViqedkApn04wW",
+      "role": "butcher",
+      "phone": "6369681523",
+      "created_at": "2026-07-20T05:44:22.758Z"
+    }
+  ],
+  "shops": [
+    {
+      "id": 1,
+      "owner_user_id": 2,
+      "name": "Rajan Fresh Cuts",
+      "address": "12 Market Street, T. Nagar",
+      "city": "Chennai",
+      "latitude": 13.035,
+      "longitude": 80.2329,
+      "license_number": "LIC-verified-123",
+      "verification_status": "verified",
+      "rating": 4.5,
+      "created_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 2,
+      "owner_user_id": 4,
+      "name": "Royal Halal Meats",
+      "address": "45 Anna Salai",
+      "city": "Chennai",
+      "latitude": 13.04,
+      "longitude": 80.24,
+      "license_number": "LIC-pending-456",
+      "verification_status": "verified",
+      "rating": 0,
+      "created_at": "2026-07-20T05:18:40.082Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Broiler Chicken",
+      "category": "Chicken",
+      "unit": "kg"
+    },
+    {
+      "id": 2,
+      "name": "Country Chicken",
+      "category": "Chicken",
+      "unit": "kg"
+    },
+    {
+      "id": 3,
+      "name": "Goat Mutton",
+      "category": "Mutton",
+      "unit": "kg"
+    },
+    {
+      "id": 4,
+      "name": "Rohu Fish",
+      "category": "Fish",
+      "unit": "kg"
+    },
+    {
+      "id": 5,
+      "name": "Tiger Prawns",
+      "category": "Prawns",
+      "unit": "kg"
+    }
+  ],
+  "shop_inventory": [
+    {
+      "id": 1,
+      "shop_id": 1,
+      "product_id": 1,
+      "available_quantity_kg": 15,
+      "selling_price_per_kg": 300
+    },
+    {
+      "id": 2,
+      "shop_id": 1,
+      "product_id": 2,
+      "available_quantity_kg": 50,
+      "selling_price_per_kg": 320
+    },
+    {
+      "id": 3,
+      "shop_id": 1,
+      "product_id": 3,
+      "available_quantity_kg": 25,
+      "selling_price_per_kg": 750
+    },
+    {
+      "id": 4,
+      "shop_id": 1,
+      "product_id": 4,
+      "available_quantity_kg": 40,
+      "selling_price_per_kg": 280
+    },
+    {
+      "id": 5,
+      "shop_id": 1,
+      "product_id": 5,
+      "available_quantity_kg": 30,
+      "selling_price_per_kg": 550
+    }
+  ],
+  "market_prices": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "city": "Chennai",
+      "reference_price_per_kg": 280,
+      "created_by_admin_id": 3
+    },
+    {
+      "id": 2,
+      "product_id": 2,
+      "city": "Chennai",
+      "reference_price_per_kg": 340,
+      "created_by_admin_id": 3
+    },
+    {
+      "id": 3,
+      "product_id": 3,
+      "city": "Chennai",
+      "reference_price_per_kg": 720,
+      "created_by_admin_id": 3
+    },
+    {
+      "id": 4,
+      "product_id": 4,
+      "city": "Chennai",
+      "reference_price_per_kg": 260,
+      "created_by_admin_id": 3
+    },
+    {
+      "id": 5,
+      "product_id": 5,
+      "city": "Chennai",
+      "reference_price_per_kg": 520,
+      "created_by_admin_id": 3
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "Block C, T. Nagar, Chennai",
+      "total_amount": 1820,
+      "payment_method": "UPI",
+      "payment_status": "paid",
+      "order_status": "Delivered",
+      "created_at": "2026-07-20T04:18:40.082Z",
+      "updated_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 2,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "Flat 4A, Green Meadows, Chennai",
+      "total_amount": 540,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:18:40.082Z",
+      "updated_at": "2026-07-20T05:18:40.082Z"
+    },
+    {
+      "id": 3,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:22:24.892Z",
+      "updated_at": "2026-07-20T05:22:24.892Z"
+    },
+    {
+      "id": 4,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:22:45.002Z",
+      "updated_at": "2026-07-20T05:22:45.002Z"
+    },
+    {
+      "id": 5,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:23:53.302Z",
+      "updated_at": "2026-07-20T05:23:53.302Z"
+    },
+    {
+      "id": 6,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:24:18.836Z",
+      "updated_at": "2026-07-20T05:24:18.836Z"
+    },
+    {
+      "id": 7,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:25:06.825Z",
+      "updated_at": "2026-07-20T05:25:06.825Z"
+    },
+    {
+      "id": 8,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:25:46.570Z",
+      "updated_at": "2026-07-20T05:25:46.570Z"
+    },
+    {
+      "id": 9,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:26:26.115Z",
+      "updated_at": "2026-07-20T05:26:26.115Z"
+    },
+    {
+      "id": 10,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:27:07.910Z",
+      "updated_at": "2026-07-20T05:27:07.910Z"
+    },
+    {
+      "id": 11,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:27:44.657Z",
+      "updated_at": "2026-07-20T05:27:44.657Z"
+    },
+    {
+      "id": 12,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "New",
+      "created_at": "2026-07-20T05:28:57.138Z",
+      "updated_at": "2026-07-20T05:28:57.138Z"
+    },
+    {
+      "id": 13,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 90,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "Cancelled",
+      "created_at": "2026-07-20T05:31:33.446Z",
+      "updated_at": "2026-07-20T06:00:13.568Z"
+    },
+    {
+      "id": 14,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "12 Anna Nagar, Chennai 600040",
+      "total_amount": 150,
+      "payment_method": "COD",
+      "payment_status": "pending",
+      "order_status": "Accepted",
+      "created_at": "2026-07-20T05:32:10.124Z",
+      "updated_at": "2026-07-20T05:32:10.210Z"
+    },
+    {
+      "id": 15,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "6,kama street,cbe.",
+      "total_amount": 620,
+      "payment_method": "COD",
+      "payment_status": "paid",
+      "order_status": "Delivered",
+      "created_at": "2026-07-20T05:38:56.603Z",
+      "updated_at": "2026-07-20T05:42:06.165Z"
+    },
+    {
+      "id": 16,
+      "customer_id": 1,
+      "shop_id": 1,
+      "delivery_address": "6,nsjd,nfsjnf",
+      "total_amount": 300,
+      "payment_method": "UPI",
+      "payment_status": "paid",
+      "order_status": "Delivered",
+      "created_at": "2026-07-20T05:52:30.618Z",
+      "updated_at": "2026-07-20T05:53:30.290Z"
+    }
+  ],
+  "order_items": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "product_id": 1,
+      "quantity_kg": 2,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Please clean thoroughly"
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "product_id": 3,
+      "quantity_kg": 2,
+      "price_per_kg": 750,
+      "cutting_style": "Biryani Cut",
+      "special_instruction": null
+    },
+    {
+      "id": 3,
+      "order_id": 2,
+      "product_id": 1,
+      "quantity_kg": 3,
+      "price_per_kg": 180,
+      "cutting_style": "Boneless",
+      "special_instruction": "No skin, cut small"
+    },
+    {
+      "id": 4,
+      "order_id": 3,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 5,
+      "order_id": 4,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 6,
+      "order_id": 5,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 7,
+      "order_id": 6,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 8,
+      "order_id": 7,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 9,
+      "order_id": 8,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 10,
+      "order_id": 9,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 11,
+      "order_id": 10,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 12,
+      "order_id": 11,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 13,
+      "order_id": 12,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 14,
+      "order_id": 13,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 180,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 15,
+      "order_id": 14,
+      "product_id": 1,
+      "quantity_kg": 0.5,
+      "price_per_kg": 300,
+      "cutting_style": "Curry Cut",
+      "special_instruction": "Less spice please"
+    },
+    {
+      "id": 16,
+      "order_id": 15,
+      "product_id": 2,
+      "quantity_kg": 1,
+      "price_per_kg": 320,
+      "cutting_style": "Large Pieces",
+      "special_instruction": null
+    },
+    {
+      "id": 17,
+      "order_id": 15,
+      "product_id": 1,
+      "quantity_kg": 1,
+      "price_per_kg": 300,
+      "cutting_style": "Biryani Cut",
+      "special_instruction": null
+    },
+    {
+      "id": 18,
+      "order_id": 16,
+      "product_id": 1,
+      "quantity_kg": 1,
+      "price_per_kg": 300,
+      "cutting_style": "Boneless",
+      "special_instruction": null
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "customer_id": 1,
+      "shop_id": 1,
+      "order_id": 1,
+      "rating": 5,
+      "comment": "Absolutely fresh and perfectly cut! Will order again.",
+      "created_at": "2026-07-20T05:18:40.082Z"
+    }
+  ]
+}
